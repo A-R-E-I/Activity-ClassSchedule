@@ -1,5 +1,6 @@
 window.addEventListener("load", GetInfo);
 let count = 0;
+var stop = 0;
 function GetInfo()
 {
 	document.getElementById("btnsubmit").addEventListener("click", ScheduleInput);
@@ -47,15 +48,16 @@ function ScheduleInput()
 	    {
 			document.getElementById("ClassPd"+ tally + "," + i).textContent = Tableinfo;
 		}
+		stop = stop + 1;
 		PeriodAmount = 0
     }
     count = tally; 
-    clear();
+    clear(PeriodAmount);
  	
 	 
 }
 
-function clear()
+function clear(InputPd)
 {
 	Classname = document.getElementById("txtClassname").value = " ";
 	Teachername = document.getElementById("txtTeacher").value = " ";

@@ -6,10 +6,6 @@ function addListener()
 	document.getElementById("btnNext").addEventListener("click", StudentQuestion);
 	document.getElementById("btnNext2").addEventListener("click", Whatperiod);
 	document.getElementById("NumofPeriod").style.display = "none";
-	document.getElementById("scheduleInfo").style.display = "none";
-	
-	
-	
 }
 
 
@@ -46,7 +42,6 @@ function Whatperiod()
 	
 	window.location.href = "ClassSchedule2.html";
 }
-
 
 
 

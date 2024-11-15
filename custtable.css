@@ -2,17 +2,22 @@ table, th, td
 {
 	border: 1px solid black;
 	border-collapse: collapse;
+	margin-left: 5%;
 }
 td[id="periodhead"]
 {
 	width: 40px;
 	text-align: center;
 }
-td[id="course"]
+td
 {
 	width: 150px;
 }
-td[id="teacher"]
+tr[id="row2"], tr[id="row4"], tr[id="row6"], tr[id="row8"]
 {
-	width: 100px;
+	background-color: lightblue;
+}
+label, button 
+{
+	margin-left: 5%;
 }
