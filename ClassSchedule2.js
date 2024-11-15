@@ -1,7 +1,8 @@
 window.addEventListener("load", GetInfo);
-let count = 0, i = 1;
+let count = 0;
 function GetInfo()
 {
+	document.getElementById("btnsubmit").addEventListener("click", ScheduleInput);
 	PeriodAmount = localStorage.getItem("Periodnum");
 	firstname = localStorage.getItem("firstname");
 	lastname = localStorage.getItem("lastname");
@@ -21,17 +22,24 @@ function GetInfo()
 	document.getElementById("Glvl").textContent = "Grade level: " + Gradelevel;
 	document.getElementById("OffClass").textContent = "Official class: " + Officialclass;
 	document.getElementById("Counselor").textContent = "Counselor: " + CounselorN;
-	for (let i = i + count; i <= PeriodAmount;) 
+	
+
+}
+
+function ScheduleInput()
+{
+	PeriodAmount = localStorage.getItem("Periodnum");
+	for (let i = 1; i <= PeriodAmount; i++) 
 	{
-		
-		tally = i
-       	Classname = localStorage.getItem("Classname" + i);
-		Teachername = localStorage.getItem("Teachername" + i);
-		Roomnum = localStorage.getItem("Roomnum" + i);
-		Hour = localStorage.getItem("Hour" + i);
-		Minute = localStorage.getItem("Minute" + i);
-		Endhour = localStorage.getItem("Endhour" + i);
-		Endminute = localStorage.getItem("Endminute" + i);
+		tally = i + count;
+		alert(tally)
+       	Classname = document.getElementById("txtClassname").value;
+		Teachername = document.getElementById("txtTeacher").value;
+		Roomnum = document.getElementById("txtroom").value;
+		Hour = document.getElementById("txthour").value;
+		Minute = document.getElementById("txtminute").value;
+		Endhour = document.getElementById("txtEndhour").value;
+		Endminute = document.getElementById("txtEndminute").value;
 		Tablenames = Classname + " " + Teachername + " " + Roomnum + " ";  
 		Tabletime = Hour + ":" + Minute + "-" + Endhour + ":" + Endminute; 
 		Tableinfo = Tablenames + Tabletime;
@@ -39,9 +47,21 @@ function GetInfo()
 	    {
 			document.getElementById("ClassPd"+ tally + "," + i).textContent = Tableinfo;
 		}
-		
+		PeriodAmount = 0
     }
-    count = count + 1;
-
+    count = tally; 
+    clear();
+ 	
+	 
 }
 
+function clear()
+{
+	Classname = document.getElementById("txtClassname").value = " ";
+	Teachername = document.getElementById("txtTeacher").value = " ";
+	Roomnum = document.getElementById("txtroom").value = " ";
+	Hour = document.getElementById("txthour").value = " ";
+	Minute = document.getElementById("txtminute").value = " ";
+	Endhour = document.getElementById("txtEndhour").value = " ";
+	Endminute = document.getElementById("txtEndminute").value = " ";
+}
