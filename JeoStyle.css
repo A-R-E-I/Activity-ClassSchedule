@@ -1,0 +1,36 @@
+div[id="numteam"]
+{
+	zoom:200%;	
+	text-align:center;
+	margin-top:2.5%;
+	margin-left:35%;
+	margin-right:35%;
+	border: 4px solid goldenrod;
+	border-collapse: collapse;
+	height:50px;
+	background-color:lightcyan;
+}
+
+img
+{
+	margin-top:10%;
+	margin-left:33%;
+	margin-right:34%;
+	zoom:50%;
+}
+
+body
+{
+	background-image:url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c2dae152-25c0-4c2e-a958-7aa6b0808af6/dg2k01r-57492f62-7730-4531-9952-75014f74ff9c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2MyZGFlMTUyLTI1YzAtNGMyZS1hOTU4LTdhYTZiMDgwOGFmNlwvZGcyazAxci01NzQ5MmY2Mi03NzMwLTQ1MzEtOTk1Mi03NTAxNGY3NGZmOWMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.q19vuAzs64QrOuemzTRLEekTGfF90OwkMyQgmnXEaoI");
+	background-size: 100%;
+}
+
+button[id="return"]
+{
+	color: red;
+	background-color: black;
+	text-align:center;
+	margin-left:45.5%;
+	margin-right:45%;
+	zoom:250%;
+}
